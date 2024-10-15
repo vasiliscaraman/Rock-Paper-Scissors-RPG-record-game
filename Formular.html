@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="CuStil.css" rel="stylesheet" />
+</head>
+<body>
+    <form action="/cerere.aspx" method="post">
+        <label for="ln">Numele de familie: </label><input id="ln" type="text" name="name" placeholder="Introduceti un nume" />
+        <br />
+        <label>Email: <input type="email" name="email" placeholder="Introduceti o adresa de mail" /></label>
+        <br />
+        <label>Parola: <input type="password" /></label>
+        <input type="hidden" name="pwd" />
+        <br />
+        <label>De acord? <input type="checkbox" name="acord" value="1" /></label>
+        <section>
+            <h1>Mese</h1>
+            <label>Mic dejun: <input type="checkbox" name="masa" value="1" /></label>
+            <br />
+            <label>Pranz: <input type="checkbox" name="masa" value="2" /></label>
+            <br />
+            <label>Cina: <input type="checkbox" name="masa" value="3" /></label>
+        </section>
+        <section>
+            <h1>Diete</h1>
+            <label>Raw vegan: <input type="radio" name="dieta" value="10" /></label>
+            <br />
+            <label>Vegan: <input type="radio" name="dieta" value="11" /></label>
+            <br />
+            <label>Lactovegetarian: <input type="radio" name="dieta" value="102" /></label>
+            <br />
+            <label>Keto: <input type="radio" name="dieta" value="13" /></label>
+            <br />
+            <label>Niciuna: <input type="radio" name="dieta" value="0" checked /></label>
+
+        </section>
+
+        <br />
+        <input type="submit" value="Trimite" formethod="get" />
+        <br />
+        <button>Save</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,124 @@
+﻿body {
+    background-color: aqua;
+}
+
+.div1 {
+    text-align: center;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    position: static;
+}
+
+.butonStart {
+    margin-top:120px;
+    width:250px;
+    height:100px;
+    font-size:50px;
+    font-style:oblique;
+    background-color: yellowgreen;
+}
+
+.butonExit {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+.div-lupta {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    right: 55%;
+    left: 20%;
+    margin-bottom: 35px;
+}
+
+.jucatoranimatie {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+.monster {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    margin-right: 40px;
+    margin-top: 40px;
+}
+
+.culoareButoane {
+    background-color: chocolate;
+}
+
+.playername {
+    position: fixed;
+    bottom: 200px;
+    left: 60px;
+}
+
+.gametitle {
+    text-align: center;
+    margin-top: 50px
+}
+
+.informare {
+    text-align: center;
+    margin-top: 280px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    position: static;
+}
+
+.vietijucator {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+.vietioponent {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+
+.reset {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+.deathanimation {
+    position: fixed;
+    right: 60px;
+    top: 50px;
+    display: none;
+}
+
+.playerhurt {
+    position: fixed;
+    bottom: 70px;
+    left: 20px;
+    display: none;
+}
+
+.monsterhurt {
+    position: fixed;
+    top: 70px;
+    right: 70px;
+    display: none;
+}
+
+.logo2 {
+    display: flex;
+    flex-flow: row wrap;
+    position: fixed;
+    left: 0px;
+    top: 30px;
+}

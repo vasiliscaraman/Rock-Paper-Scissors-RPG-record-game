@@ -1,0 +1,13 @@
+﻿h2 {
+    background: url('../Images-and-sprites/playercharacter.png');
+    background-position: 0px 0px;
+    width: 87px;
+    height: 153px;
+}
+
+@for $i from 0 through 5 {
+    .player-#{$i} {
+        background-position: #{-$i*94+(-$i*2)}px 0px;
+    }
+
+}

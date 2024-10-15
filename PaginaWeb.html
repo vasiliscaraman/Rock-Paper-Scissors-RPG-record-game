@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="utf-8" />
+    <title>Rock-Paper-Scissors</title>
+    <link href="CuStil.css" rel="stylesheet" />
+    <link href="Content/bootswatch/darkly/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.6.0.js"></script>
+    <script src="Scripts/JS.js"></script>
+</head>
+<body>
+    <label>(Optional)Introduceti un nume: <input id="numejucator" type="text" name="name" placeholder="Introduceti un nume" /></label><br />
+    <label class="record">Record: <span id="numarrecord">0</span></label>
+    <h1 class="gametitle">R-P-S - fighter game</h1>
+    <div class="div1">
+        <button id="start" class="butonStart">START</button>
+    </div>
+    <button id="reset" class="reset">Reset record</button>
+
+    <div id="ajax" class="div1">
+
+    </div>
+    <script>
+        $(function () {
+            $("#ajax").load("ajax.html");
+        });
+    </script>
+
+</body>
+</html>

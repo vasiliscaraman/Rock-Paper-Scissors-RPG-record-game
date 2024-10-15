@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="utf-8" />
+    <title>Lupta</title>
+    <link href="CuStil.css" rel="stylesheet" />
+    <link href="Content/bootswatch/superhero/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.6.0.js"></script>
+    <script src="Scripts/JS2.js"></script>
+    <script src="../Scripts/zCharacter.js"></script>
+    <link href="SASS/playercharacter.css" rel="stylesheet" />
+</head>
+<body>
+    <label class="wins">Numar de victorii: <span id="numarwins">0</span></label>
+    <button id="exit" class="butonExit">Iesi din joc</button>
+    <div class="div-lupta">
+        <button id="piatra" class="culoareButoane" onclick="alegere('Piatra')">Piatra</button>
+        <button id="hartie" class="culoareButoane" onclick="alegere('Hartie')">Hartie</button>
+        <button id="foarfece" class="culoareButoane" onclick="alegere('Foarfece')">Foarfece</button>
+    </div>
+    <div><h1 id="informaremiscari" class="informare">Bine ai venit in arenă!</h1></div>
+    <div class="jucatoranimatie">
+        <h2 id="animatie" class="player-0">­</h2>
+    </div>
+    <div>
+        <img id="monster" alt="monster0" class="monster" src="Images-and-sprites/monster0.png" />
+    </div>
+
+    <div id="ajax" class="logo2">
+
+    </div>
+    <script>
+        $(function () {
+            $("#ajax").load("ajax.html");
+        });
+    </script>
+
+    <svg height="40" width="240" class="vietijucator" id="vietijucator">
+        <circle cx="23" cy="20" r="10" stroke="black" stroke-width="1" fill="red" />
+        <circle cx="46" cy="20" r="10" stroke="black" stroke-width="1" fill="red" />
+        <circle cx="69" cy="20" r="10" stroke="black" stroke-width="1" fill="red" />
+        <circle cx="92" cy="20" r="10" stroke="black" stroke-width="1" fill="red" />
+        <circle cx="115" cy="20" r="10" stroke="black" stroke-width="1" fill="red" />
+        <circle cx="138" cy="20" r="10" stroke="black" stroke-width="1" fill="red" />
+        <circle cx="161" cy="20" r="10" stroke="black" stroke-width="1" fill="red" />
+        <circle cx="184" cy="20" r="10" stroke="black" stroke-width="1" fill="red" />
+        <circle cx="207" cy="20" r="10" stroke="black" stroke-width="1" fill="red" />
+        <circle cx="230" cy="20" r="10" stroke="black" stroke-width="1" fill="red" />
+    </svg>
+
+    <svg height="40" width="100" class="vietioponent" id="vietioponent">
+        <circle cx="10" cy="20" r="10" stroke="black" stroke-width="1" fill="green" />
+        <circle cx="32" cy="20" r="10" stroke="black" stroke-width="1" fill="green" />
+        <circle cx="54" cy="20" r="10" stroke="black" stroke-width="1" fill="green" />
+    </svg>
+
+    <canvas id="deathanimation" class="deathanimation" width="160" height="140"></canvas>
+
+    <script>
+        var plansa = document.getElementById("deathanimation");
+        var context = plansa.getContext("2d");
+
+        context.beginPath();
+        context.arc(70, 80, 50, 0.3 * Math.PI, 1 * Math.PI);
+        context.fillStyle = "#ff0000";
+        context.fill();
+        context.stroke();
+
+        context.beginPath();
+        context.arc(90, 80, 50, 2 * Math.PI, 0.7 * Math.PI);
+        context.fill();
+        context.stroke();
+
+        context.beginPath();
+        context.arc(90, 70, 60, 0.6 * Math.PI, 1.25 * Math.PI);
+        context.fill();
+        context.stroke();
+
+        context.beginPath();
+        context.arc(70, 70, 60, 1.75 * Math.PI, 0.4 * Math.PI);
+        context.fill();
+        context.stroke();
+
+        context.beginPath();
+        context.ellipse(80, 65, 20, 60, Math.PI, 0, 2 * Math.PI);
+        context.fill();
+        context.stroke();
+
+        context.beginPath();
+        context.arc(80, 103, 24, 0, 2 * Math.PI);
+        context.fillStyle = "#ff6a00";
+        context.fill();
+        context.stroke();
+
+        context.beginPath();
+        context.arc(80, 110, 12, 0, 2 * Math.PI);
+        context.fillStyle = "yellow";
+        context.fill();
+        context.stroke();
+    </script>
+
+    <canvas id="playerhurt" class="playerhurt" width="130" height="130"></canvas>
+    <script>
+        var plansa = document.getElementById("playerhurt");
+        var context = plansa.getContext("2d");
+        context.beginPath();
+        context.ellipse(65, 65, 5, 60, 0.75 * Math.PI, 0, 2 * Math.PI);
+        context.fillStyle = "#b52400";
+        context.fill();
+        context.stroke();
+    </script>
+
+    <canvas id="monsterhurt" class="monsterhurt" width="160" height="160"></canvas>
+    <script>
+        var plansa = document.getElementById("monsterhurt");
+        var context = plansa.getContext("2d");
+        context.beginPath();
+        context.ellipse(80, 80, 8, 75, 1.25 * Math.PI, 0, 2 * Math.PI);
+        context.fillStyle = "#b52400";
+        context.fill();
+        context.stroke();
+    </script>
+
+</body>
+</html>

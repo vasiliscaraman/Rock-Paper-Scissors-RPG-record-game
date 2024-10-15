@@ -1,0 +1,23 @@
+﻿h2 {
+  background: url("../Images-and-sprites/playercharacter.png");
+  background-position: 0px 0px;
+  width: 87px;
+  height: 153px; }
+
+.player-0 {
+  background-position: 0px 0px; }
+
+.player-1 {
+  background-position: -96px 0px; }
+
+.player-2 {
+  background-position: -192px 0px; }
+
+.player-3 {
+  background-position: -288px 0px; }
+
+.player-4 {
+  background-position: -384px 0px; }
+
+.player-5 {
+  background-position: -480px 0px; }
